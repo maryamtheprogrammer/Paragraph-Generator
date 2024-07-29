@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Generator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+            background-color: #e0e0e0;
+        }
+
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+        }
+
+        button{
+            background-color: aquamarine;
+            padding: 10px;
+            width: 150px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #fff;
+            margin-left: 1em;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(160, 253, 222);
+            transform: scale(1.1);
+            transition: .4s ease;
+        }
+
+        .generate{
+            text-align: center;
+            border: 2px solid black;
+            height: 400px;
+            width: 800px;
+            margin-left: 240px;
+            margin-top: 2em;
+        }
+
+        #intro-paragraph{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Myself Intro Paragraph Generator</h1>
+    <button onclick="run()">Generate</button>
+  </div>
+    
+   <div class="generate">
+    <p id="intro-paragraph"></p>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
